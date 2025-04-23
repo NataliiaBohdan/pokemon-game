@@ -1,0 +1,144 @@
+#root {
+  font-family: "Rubik Iso", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+  color: white;
+  padding: 60px;
+  height: 100vh;
+}
+
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 30px;
+}
+
+.pokemons-wrapper {
+  gap: 100px;
+  margin: auto;
+
+  justify-items: center;
+  display: flex;
+
+  list-style: none;
+}
+.pokemon-item {
+  width: 400px;
+  max-width: 400px;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+
+  align-items: center;
+  color: white;
+}
+
+.pokemon-head-info {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.pokemon-info {
+  position: relative;
+  width: 300px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/015/698/968/small/the-balloon-text-cartoon-style-png.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  color: black;
+}
+
+li.flipped .pokemon-head-info .pokemon-image {
+  transform: scaleX(-1) translateY(0);
+  animation: flippedBounce 0.5s infinite alternate;
+}
+@keyframes flippedBounce {
+  0% {
+    transform: scaleX(-1) translateY(0);
+  }
+  100% {
+    transform: scaleX(-1) translateY(-10px);
+  }
+}
+
+.pokemon-info-text {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+  text-align: left;
+  width: 200px;
+  z-index: 1;
+}
+
+.pokemon-info p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.text-accent {
+  color: rgb(255, 132, 0);
+}
+
+.primary-button {
+  background-color: greenyellow;
+  padding: 14px 40px;
+  font-family: "Rubik Iso", system-ui;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.animating {
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.pokemon-name {
+  text-transform: uppercase;
+}
+.pokemon-timer {
+  color: greenyellow;
+}
+.pokemon-winner-box {
+  position: relative;
+  margin-bottom: 60px;
+}
+.pokemon-winner-box img {
+  width: 140px;
+}
+.pokemon-conf-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -100px;
+}
+.result-log {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.pokemon-attack-text {
+  background-color: greenyellow;
+  padding: 2px;
+}
+.pokemon-winner-text {
+  text-transform: uppercase;
+  color: greenyellow;
+  text-align: center;
+}

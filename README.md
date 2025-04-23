@@ -1,3 +1,5 @@
+A simple Pokémon battle game powered by the PokéAPI! Two random Pokémon are selected to face off, and after a 5-second countdown, the one with the higher power stat is declared the winner. Quick, fun, and perfect for a mini showdown!
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
